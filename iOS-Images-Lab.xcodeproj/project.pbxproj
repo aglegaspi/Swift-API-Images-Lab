@@ -11,6 +11,9 @@
 		EC2FFD62233134CB00360778 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FFD61233134CB00360778 /* NetworkManager.swift */; };
 		EC2FFD642331352900360778 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FFD632331352900360778 /* AppError.swift */; };
 		EC2FFD6A2331678C00360778 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FFD692331678C00360778 /* ImageHelper.swift */; };
+		EC2FFD6F23317E5A00360778 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FFD6E23317E5A00360778 /* PokemonViewController.swift */; };
+		EC2FFD7123317F3400360778 /* PokemonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FFD7023317F3400360778 /* PokemonDetailViewController.swift */; };
+		EC2FFD732331853E00360778 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FFD722331853E00360778 /* Pokemon.swift */; };
 		EC8AA91A23218AE20001C6D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8AA91923218AE20001C6D4 /* AppDelegate.swift */; };
 		EC8AA91C23218AE20001C6D4 /* ComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8AA91B23218AE20001C6D4 /* ComicViewController.swift */; };
 		EC8AA91F23218AE20001C6D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8AA91D23218AE20001C6D4 /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 		EC2FFD61233134CB00360778 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EC2FFD632331352900360778 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		EC2FFD692331678C00360778 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		EC2FFD6E23317E5A00360778 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
+		EC2FFD7023317F3400360778 /* PokemonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewController.swift; sourceTree = "<group>"; };
+		EC2FFD722331853E00360778 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		EC8AA91623218AE20001C6D4 /* iOS-Images-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Images-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8AA91923218AE20001C6D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC8AA91B23218AE20001C6D4 /* ComicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +49,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC2FFD6B2331788400360778 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC8AA91B23218AE20001C6D4 /* ComicViewController.swift */,
+				EC2FFD6E23317E5A00360778 /* PokemonViewController.swift */,
+				EC2FFD7023317F3400360778 /* PokemonDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EC2FFD6C2331788F00360778 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EC2FFD692331678C00360778 /* ImageHelper.swift */,
+				EC2FFD61233134CB00360778 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		EC2FFD6D2331789A00360778 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC2FFD632331352900360778 /* AppError.swift */,
+				EC2FFD722331853E00360778 /* Pokemon.swift */,
+				EC07D9BC23302C2A00617E79 /* Comic.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		EC8AA90D23218AE20001C6D4 = {
 			isa = PBXGroup;
 			children = (
@@ -63,11 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				EC8AA92B2321970D0001C6D4 /* Supporting Files */,
-				EC8AA91B23218AE20001C6D4 /* ComicViewController.swift */,
-				EC2FFD692331678C00360778 /* ImageHelper.swift */,
-				EC2FFD61233134CB00360778 /* NetworkManager.swift */,
-				EC2FFD632331352900360778 /* AppError.swift */,
-				EC07D9BC23302C2A00617E79 /* Comic.swift */,
+				EC2FFD6B2331788400360778 /* View Controllers */,
+				EC2FFD6C2331788F00360778 /* Networking */,
+				EC2FFD6D2331789A00360778 /* Models */,
 				EC8AA91D23218AE20001C6D4 /* Main.storyboard */,
 				EC8AA92023218AE40001C6D4 /* Assets.xcassets */,
 				EC8AA92523218AE40001C6D4 /* Info.plist */,
@@ -158,7 +191,10 @@
 				EC2FFD62233134CB00360778 /* NetworkManager.swift in Sources */,
 				EC07D9BD23302C2A00617E79 /* Comic.swift in Sources */,
 				EC2FFD642331352900360778 /* AppError.swift in Sources */,
+				EC2FFD6F23317E5A00360778 /* PokemonViewController.swift in Sources */,
 				EC8AA91C23218AE20001C6D4 /* ComicViewController.swift in Sources */,
+				EC2FFD732331853E00360778 /* Pokemon.swift in Sources */,
+				EC2FFD7123317F3400360778 /* PokemonDetailViewController.swift in Sources */,
 				EC8AA91A23218AE20001C6D4 /* AppDelegate.swift in Sources */,
 				EC2FFD6A2331678C00360778 /* ImageHelper.swift in Sources */,
 			);
