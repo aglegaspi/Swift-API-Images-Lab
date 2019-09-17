@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC07D9BD23302C2A00617E79 /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC07D9BC23302C2A00617E79 /* Comic.swift */; };
+		EC2FFD62233134CB00360778 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FFD61233134CB00360778 /* NetworkManager.swift */; };
+		EC2FFD642331352900360778 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FFD632331352900360778 /* AppError.swift */; };
+		EC2FFD6A2331678C00360778 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FFD692331678C00360778 /* ImageHelper.swift */; };
 		EC8AA91A23218AE20001C6D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8AA91923218AE20001C6D4 /* AppDelegate.swift */; };
-		EC8AA91C23218AE20001C6D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8AA91B23218AE20001C6D4 /* ViewController.swift */; };
+		EC8AA91C23218AE20001C6D4 /* ComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8AA91B23218AE20001C6D4 /* ComicViewController.swift */; };
 		EC8AA91F23218AE20001C6D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8AA91D23218AE20001C6D4 /* Main.storyboard */; };
 		EC8AA92123218AE40001C6D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8AA92023218AE40001C6D4 /* Assets.xcassets */; };
 		EC8AA92423218AE40001C6D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8AA92223218AE40001C6D4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC07D9BC23302C2A00617E79 /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		EC2FFD61233134CB00360778 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EC2FFD632331352900360778 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		EC2FFD692331678C00360778 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		EC8AA91623218AE20001C6D4 /* iOS-Images-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Images-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8AA91923218AE20001C6D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC8AA91B23218AE20001C6D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC8AA91B23218AE20001C6D4 /* ComicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewController.swift; sourceTree = "<group>"; };
 		EC8AA91E23218AE20001C6D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC8AA92023218AE40001C6D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC8AA92323218AE40001C6D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				EC8AA92B2321970D0001C6D4 /* Supporting Files */,
-				EC8AA91B23218AE20001C6D4 /* ViewController.swift */,
+				EC8AA91B23218AE20001C6D4 /* ComicViewController.swift */,
+				EC2FFD692331678C00360778 /* ImageHelper.swift */,
+				EC2FFD61233134CB00360778 /* NetworkManager.swift */,
+				EC2FFD632331352900360778 /* AppError.swift */,
+				EC07D9BC23302C2A00617E79 /* Comic.swift */,
 				EC8AA91D23218AE20001C6D4 /* Main.storyboard */,
 				EC8AA92023218AE40001C6D4 /* Assets.xcassets */,
 				EC8AA92523218AE40001C6D4 /* Info.plist */,
@@ -143,8 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC8AA91C23218AE20001C6D4 /* ViewController.swift in Sources */,
+				EC2FFD62233134CB00360778 /* NetworkManager.swift in Sources */,
+				EC07D9BD23302C2A00617E79 /* Comic.swift in Sources */,
+				EC2FFD642331352900360778 /* AppError.swift in Sources */,
+				EC8AA91C23218AE20001C6D4 /* ComicViewController.swift in Sources */,
 				EC8AA91A23218AE20001C6D4 /* AppDelegate.swift in Sources */,
+				EC2FFD6A2331678C00360778 /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
